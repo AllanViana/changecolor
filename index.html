@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UFT-8" />
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="rgb.css" />
+        <title>Document</title>
+      </head>
+
+      <body>
+        <header>
+          <h1>Seletor de cores RGB</h1>
+        </header>
+        <main>
+          <section class="principal">
+            <form action="">
+              <div class="campoRed">
+                <label for="Red">(R) RED:</label>
+                <input
+                  type="range"
+                  name="rangeRed"
+                  id="rangeRed"
+                  min="0"
+                  max="255"
+                  step="1"
+                  value="0"
+                />
+                <input
+                  type="text"
+                  name="textRed"
+                  id="textRed"
+                  disabled
+                  size="2"
+                />
+              </div>
+              <div class="campoGreen">
+                <label for="Green">(G) GREEN:</label>
+                <input
+                  type="range"
+                  name="rangeGreen"
+                  id="rangeGreen"
+                  min="0"
+                  max="255"
+                  step="1"
+                  value="0"
+                />
+                <input
+                  type="text"
+                  name="textGreen"
+                  id="textGreen"
+                  disabled
+                  size="2"
+                />
+              </div>
+              <div class="campoBlue">
+                <label for="Blue">(B) BLUE:</label>
+                <input
+                  type="range"
+                  name="rangeBlue"
+                  id="rangeBlue"
+                  min="0"
+                  max="255"
+                  step="1"
+                  value="0"
+                />
+                <input
+                  type="text"
+                  name="textBlue"
+                  id="textBlue"
+                  disabled
+                  size="2"
+                />
+              </div>
+            </form>
+            <div id="hex"></div>
+            <div id="finalBoxColor"></div>
+          </section>
+        </main>
+        <footer>
+          <p>
+            Bootcamp de Desenvolvimento Full Stack IGTI <br />
+            por Allan Viana &copy;
+          </p>
+        </footer>
+
+        <script src="rgbScript.js"></script>
+      </body>
+    </html>
+  </head>
+</html>
